@@ -1,10 +1,28 @@
-import requests
-import json
-import xmltodict # will need to pip install xmltodict
-def getData():
-    return json.loads(json.dumps(xmltodict.parse(requests.get('https://api.globalgiving.org/api/public/projectservice/themes?api_key=b65a4229-29bd-42ca-8267-eb7768a8110c').content)))['themes']['theme']
-
-def get_thingy():
-    for i in getData():
-        print (f'<option value="{i["name"]}">{i["name"]}</option>')
-        
+<option value="Animal Welfare">
+<option value="Child Protection">
+<option value="Climate Action">
+<option value="Peace and Reconciliation">
+<option value="Disaster Response">
+<option value="Economic Growth">
+<option value="Education">
+<option value="Ecosystem Restoration">
+<option value="Gender Equality">
+<option value="Physical Health">
+<option value="Ending Human Trafficking">
+<option value="Justice and Human Rights">
+<option value="Sport">
+<option value="Digital Literacy">
+<option value="Food Security">
+<option value="Arts and Culture">
+<option value="LGBTQIA+ Equality">
+<option value="COVID-19">
+<option value="Clean Water">
+<option value="Disability Rights">
+<option value="Ending Abuse">
+<option value="Mental Health">
+<option value="Racial Justice">
+<option value="Refugee Rights">
+<option value="Reproductive Health">
+<option value="Safe Housing">
+<option value="Sustainable Agriculture">
+<option value="Wildlife Conservation">
